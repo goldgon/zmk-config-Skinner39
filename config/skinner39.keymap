@@ -9,10 +9,10 @@
 
         default_layer {
             bindings = <
-  &kp ESCAPE      &kp Q         &kp E             &kp U         &kp P                              &kp D  &kp T  &kp R              &kp W  &mkp MB1
-  &kp TAB         &kp O         &mt LEFT_SHIFT A  &kp I         &kp F                              &kp H  &kp Y  &mt RIGHT_SHIFT K  &kp S  &kp B
-  &kp LCTRL       &kp X         &kp C             &kp V         &kp L                              &kp N  &kp M  &kp G              &kp J  &mt RCTRL Z
-  &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT      &lt 6 ESCAPE  &mo 4  &lt 5 LA(GRAVE)  &kp ENTER  &mo 2                                   &kp RIGHT_ALT
+  &kp ESCAPE          &kp Q         &kp E         &kp U         &kp P                              &kp D  &kp T  &kp R  &kp W  &mkp MB1
+  &mt LEFT_SHIFT TAB  &kp O         &kp A         &kp I         &kp F                              &kp H  &kp Y  &kp K  &kp S  &mt RIGHT_SHIFT B
+  &kp LCTRL           &kp X         &kp C         &kp V         &kp L                              &kp N  &kp M  &kp G  &kp J  &mt RCTRL Z
+  &kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 ESCAPE  &mo 4  &lt 5 LA(GRAVE)  &kp ENTER  &mo 2                       &kp RIGHT_ALT
             >;
         };
 
@@ -38,7 +38,7 @@
             bindings = <
   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                            &kp F6             &kp F7  &kp F8  &kp F9  &kp F10
   &kp F11  &kp F12  &kp F7   &kp F8   &trans                            &trans             &trans  &trans  &trans  &trans
-  &kp F9   &kp F10  &kp F11  &kp F12  &kp LC(RG(LEFT))                  &kp LS(LG(RIGHT))  &trans  &trans  &trans  &trans
+  &kp F9   &kp F10  &kp F11  &kp F12  &kp LC(RG(LEFT))                  &kp LG(RC(RIGHT))  &trans  &trans  &trans  &trans
   &trans   &trans   &trans   &trans   &trans            &trans  &trans  &trans                                     &trans
             >;
         };
