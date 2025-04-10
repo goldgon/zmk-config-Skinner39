@@ -11,7 +11,7 @@
   &lt 2 ESCAPE        &kp Q         &kp E         &kp U         &kp P                              &kp D  &kp T  &kp R  &kp W  &mkp MB1
   &mt LEFT_SHIFT TAB  &kp O         &kp A         &kp I         &kp F                              &kp H  &kp Y  &kp K  &kp S  &mt RIGHT_SHIFT B
   &kp LCTRL           &kp X         &kp C         &kp V         &kp L                              &kp N  &kp M  &kp G  &kp J  &mt RCTRL Z
-  &kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 ESCAPE  &mo 4  &lt 5 LA(GRAVE)  &kp ENTER  &mo 2                       &kp RIGHT_ALT
+  &kp LEFT_SHIFT      &kp A         &kp LEFT_ALT  &lt 6 ESCAPE  &mo 4  &lt 5 LA(GRAVE)  &kp ENTER  &mo 2                       &kp RIGHT_ALT
             >;
         };
 
@@ -27,7 +27,7 @@
         symbol_layer {
             bindings = <
   &kp LS(SLASH)  &kp AT_SIGN               &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
-  &kp COMMA      &trans                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp MINUS       &kp EQUAL     &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET  &kp SQT
+  &kp COMMA      &trans                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp MINUS       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x21)
   &kp PERIOD     &kp LS(NON_US_BACKSLASH)  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
   &trans         &trans                    &trans     &trans         &mo 3        &trans  &trans  &trans                                                              &trans
             >;
