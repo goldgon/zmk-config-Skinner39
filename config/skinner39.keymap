@@ -11,7 +11,7 @@
   &lt 2 ESCAPE        &kp Q         &kp E         &kp U         &kp P                              &kp D  &kp T  &kp R  &kp W  &mkp MB1
   &mt LEFT_SHIFT TAB  &kp O         &kp A         &kp I         &kp F                              &kp H  &kp Y  &kp K  &kp S  &mt RIGHT_SHIFT B
   &kp LCTRL           &kp X         &kp C         &kp V         &kp L                              &kp N  &kp M  &kp G  &kp J  &mt RCTRL Z
-  &kp LEFT_SHIFT      &kp A         &kp LEFT_ALT  &lt 6 ESCAPE  &mo 4  &lt 5 LA(GRAVE)  &kp ENTER  &mo 2                       &kp RIGHT_ALT
+  &kp LEFT_SHIFT      &kt LEFT_SHIFT         &kp LEFT_ALT  &lt 6 ESCAPE  &mo 4  &lt 5 LA(GRAVE)  &kp ENTER  &mo 2                       &kp RIGHT_ALT
             >;
         };
 
@@ -27,7 +27,7 @@
         symbol_layer {
             bindings = <
   &kp LS(SLASH)  &kp AT_SIGN               &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
-  &kp COMMA      &trans                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp MINUS       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x21)
+  &kp COMMA      &trans                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp MINUS       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
   &kp PERIOD     &kp LS(NON_US_BACKSLASH)  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
   &trans         &trans                    &trans     &trans         &mo 3        &trans  &trans  &trans                                                              &trans
             >;
@@ -37,8 +37,8 @@
             bindings = <
   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                            &kp F6             &kp F7  &kp F8  &kp F9  &kp F10
   &kp F11  &kp F12  &kp F7   &kp F8   &trans                            &trans             &trans  &trans  &trans  &trans
-  &kp F9   &kp F10  &kp F11  &kp F12  &kp LC(RG(LEFT))                  &kp LG(RC(RIGHT))  &trans  &trans  &trans  &trans
-  &trans   &trans   &trans   &trans   &trans            &trans  &trans  &trans                                     &trans
+  &kp F9   &kp F10  &kp F11  &kp F12  &kp LC(RG(LEFT))                  &kp LG(RC(RIGHT))  &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+  &trans   &trans   &trans   &trans   &trans            &trans  &trans  &trans                                     &bt BT_CLR
             >;
         };
 
