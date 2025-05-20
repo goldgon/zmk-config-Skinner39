@@ -29,8 +29,8 @@
         symbol_layer {
             bindings = <
   &kp LS(SLASH)  &kp AT_SIGN               &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
-  &kp COMMA      &trans                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp LS(SLASH)       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
-  &kp PERIOD     &kp LS(NON_US_BACKSLASH)  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
+  &kp COMMA      &kp JP_SEMI                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp LS(SLASH)       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
+  &kp PERIOD     &kp JP_COLON  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
   &trans         &trans                    &trans     &trans         &mo 3        &trans  &trans  &trans                                                              &trans
             >;
         };
@@ -47,7 +47,7 @@
         mouse_layer {
             bindings = <
   &kp N1          &kp N2            &kp N3                &kp N4     &kp N5                     &kp N6         &kp N7     &kp N8                 &kp N9             &kp N0
-  &kp LEFT_ARROW  &kp LEFT_BRACKET  &kp LS(0x25)  &kp SPACE  &kp MINUS                  &kp BACKSPACE  &kp ENTER  &kp JP_RPAR  &kp RIGHT_BRACKET  &kp GREATER_THAN
+  &kp JP_LT  &kp JP_LBKT  &kp LS(0x25)  &kp SPACE  &kp MINUS                  &kp BACKSPACE  &kp ENTER  &kp JP_RPAR  &kp JP_RBKT  &kp JP_RT
   &kp END         &kp PAGE_DOWN     &kp DOWN              &kp LEFT   &trans                     &kp DELETE     &kp RIGHT  &kp UP_ARROW           &kp PAGE_UP        &kp HOME
   &trans          &trans            &trans                &trans     &trans     &trans  &trans  &kp GRAVE                                                           &trans
             >;
