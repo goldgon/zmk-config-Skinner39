@@ -27,10 +27,10 @@
 
         symbol_layer {
             bindings = <
- &kp LS(SLASH)  &kp AT_SIGN               &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
- &kp COMMA      &trans                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp LS(SLASH)       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
- &kp PERIOD     &kp LS(NON_US_BACKSLASH)  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
- &trans         &trans                    &trans     &trans         &mo 3        &trans  &trans  &trans                                                              &trans
+  &kp LS(SLASH)  &kp AT_SIGN               &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
+  &kp COMMA      &trans                    &trans     &kp RS(MINUS)  &kp MINUS                    &kp LS(SLASH)       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
+  &kp PERIOD     &kp LS(NON_US_BACKSLASH)  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
+  &trans         &trans                    &trans     &trans         &mo 3        &trans  &trans  &trans                                                              &trans
             >;
         };
 
@@ -38,7 +38,7 @@
             bindings = <
   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                            &kp F6             &kp F7  &kp F8  &kp F9  &kp F10
   &kp F11  &kp F12  &kp F7   &kp F8   &trans                            &trans             &trans  &trans  &trans  &trans
-  &kp F9   &kp F10  &kp F11  &kp F12  &kp LC(RG(LEFT))                  &kp LG(RC(RIGHT))  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
+  &kp F9   &kp F10  &kp F11  &kp F12  &kp LC(RG(LEFT))                  &kp LG(RC(RIGHT))  &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
   &trans   &trans   &trans   &trans   &trans            &trans  &trans  &trans                                     &bt BT_CLR
             >;
         };
@@ -54,10 +54,10 @@
 
         scroll_layer {
             bindings = <
- &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &mkp MB3
- &trans  &trans  &trans  &trans  &trans                  &trans  &kp p   &trans  &kp z   &trans
- &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &mkp MB3
+  &kp C_SLEEP  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
