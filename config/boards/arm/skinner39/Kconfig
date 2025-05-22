@@ -8,3 +8,9 @@ config PMW3610_SCROLL_TICK
     default 10
     help
       Interval (in ms) for processing scroll input from the PMW3610 sensor.
+
+config PMW3610_INVERT_SCROLL_Y
+    bool "Invert Y-axis scrolling for PMW3610"
+    default n
+    help
+      Inverts the Y-axis of scroll events reported by the PMW3610 sensor.
