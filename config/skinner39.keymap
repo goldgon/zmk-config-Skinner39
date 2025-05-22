@@ -56,7 +56,7 @@
         scroll_layer {
             bindings = <
   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &mkp MB3
-  &kp C_SLEEP  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &kp C_SLEEP  &trans  &trans  &trans  &trans                  &trans  &kp LC(RG(LEFT))   &trans  &kp LG(RC(RIGHT))  &trans
   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
