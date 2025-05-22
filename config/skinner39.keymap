@@ -4,6 +4,10 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
+&mt {
+    flavor = "tap-preferred";
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
