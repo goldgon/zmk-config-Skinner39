@@ -2,3 +2,9 @@ config BOARD_ENABLE_DCDC
     bool "Enable DCDC mode"
     select SOC_DCDC_NRF52X
     default y
+
+config PMW3610_SCROLL_TICK
+    int "Scroll tick interval for PMW3610 sensor"
+    default 10
+    help
+      Interval (in ms) for processing scroll input from the PMW3610 sensor.
