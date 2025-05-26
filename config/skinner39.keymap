@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 1
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
