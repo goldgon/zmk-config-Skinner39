@@ -55,7 +55,7 @@ nice_view_spi: &spi2 {
 };
 
 
-/ {
+
     behaviors {
         // 垂直スクロール用のbehaviorの設定
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -70,10 +70,10 @@ nice_view_spi: &spi2 {
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
             tap-ms = <20>; // スクロールのタップ時間
+cs-gpios = <&gpio0 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, <&gpio0 8 GPIO_ACTIVE_LOW>;
+
         };
     };
-};
-
 
 
 
