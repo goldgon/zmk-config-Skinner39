@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 &mt {
     flavor = "balanced";
@@ -30,7 +29,7 @@
         default_layer {
             bindings = <
   &lt 5 ESCAPE        &kp Q         &kp E         &kp U         &kp P                              &kp D  &kp T  &kp R  &kp W  &mkp MB1
-  &mt LEFT_SHIFT TAB  &kp O         &kp A         &kp I         &kp F                              &kp H  &kp Y  &kp K  &kp S  &mt RSHIFT B
+  &mt LEFT_SHIFT TAB  &kp O         &kp A         &kp I         &kp F                              &kp H  &kp Y  &kp K  &kp S  &mt SHIFT B
   &mt LCTRL PERIOD    &kp X         &kp C         &kp V         &kp L                              &kp N  &kp M  &kp G  &kp J  &mt RCTRL Z
   &kp LEFT_SHIFT      &kt LEFT_SHIFT         &kp LEFT_WIN  &lt 6 ESCAPE  &mo 4  &lt 5 LA(GRAVE)  &kp ENTER  &mo 2                       &kp RIGHT_ALT
             >;
@@ -47,8 +46,8 @@
 
         symbol_layer {
             bindings = <
-  &kp LS(SLASH)  &kp AT_SIGN               &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
-  &kp COMMA      &kp JP_SEMI                    &JP_AT     &kp RS(MINUS)  &kp MINUS                    &kp LS(SLASH)       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
+  &kp LS(SLASH)  &kp AT_SIGN    &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
+  &kp COMMA      &kp JP_SEMI    &JP_AT     &kp RS(MINUS)  &kp MINUS                    &kp LS(SLASH)       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
   &kp PERIOD     &kp JP_COLON  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
   &trans         &trans                    &trans     &trans         &mo 3        &trans  &trans  &trans                                                              &trans
             >;
