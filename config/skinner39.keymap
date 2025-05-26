@@ -11,18 +11,24 @@
     quick-tap-ms = <0>;
 };
 
-
-
-bool reverse_scroll_y(struct zmk_behavior_binding *binding, struct zmk_key_record *record) {
-    // Y軸のスクロール方向反転
-    if (record->keycode == INPUT_REL_Y) {
-        record->delta.y = -record->delta.y; // Y軸のスクロール方向反転
-    }
-    return true;
-}
-
-
-
+/ {
+    behaviors {
+        // 垂直スクロール用のbehaviorの設定
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>; // スクロールのタップ時間
+        };
+        // 水平スクロール用のbehaviorの設定
+        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+            tap-ms = <20>; // スクロールのタップ時間
+        };
+    };
+};
 
 / {
 
