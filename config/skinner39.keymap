@@ -4,10 +4,12 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
+&mt {
+    flavor = "balanced";
+    quick-tap-ms = <0>;
+};
 
-/ {
-    keymap {
-        compatible = "zmk,keymap";
+
 
         default_layer {
             bindings = <
