@@ -10,7 +10,10 @@
 };
 
 
+/ {
 
+    keymap {
+        compatible = "zmk,keymap";
         default_layer {
             bindings = <
   &lt 5 ESCAPE        &kp Q         &kp E         &kp U         &kp P                              &kp D  &kp T  &kp R  &kp W  &mkp MB1
