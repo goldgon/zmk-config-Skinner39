@@ -15,7 +15,7 @@ manifest:
       remote: goldgon
       revision: main
     - name: zmk-split-peripheral-input-relay
-      remote: badjeff
+      remote: goldgon
       revision: main
     - name: zmk-input-behavior-listener
       remote: badjeff
