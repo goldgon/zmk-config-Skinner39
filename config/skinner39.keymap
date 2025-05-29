@@ -8,6 +8,21 @@
 #include "keycode_japanese.h"
 
 
+    /* input config for mouse scroll mode */
+    trackball_scroll_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <5>;
+        evt-type = <INPUT_EV_REL>;            
+        x-input-code = <INPUT_REL_MISC>;
+        y-input-code = <INPUT_REL_WHEEL>;
+        y-invert;
+        bindings = <&ib_wheel_scaler 1 14>;
+    };
+
+
+
+
 
 &mt {
     flavor = "balanced";
@@ -15,24 +30,10 @@
     tapping-term-ms = <150>;
 };
 
-/ {
-    behaviors {
-        // 垂直スクロール用のbehaviorの設定
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <20>; // スクロールのタップ時間
-        };
-        // 水平スクロール用のbehaviorの設定
-        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-            tap-ms = <20>; // スクロールのタップ時間
-        };
-    };
-};
+
+
+
+
 
 / {
 
@@ -112,22 +113,3 @@
     };
 };
 
-
-
-// &trackball_peripheral_listener {
-//    input-processors =
-//     activate layer 3 within 500ms of the trackball moving
-//     <&zip_temp_layer 3 500>;
-// };
-
-//left hand trackball configuration
-
-&trackball_peripheral_listener {
-    input-processors =
-        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),
-        <&zip_xy_scaler 1 3>,
-        // make this trackball output scrolling events by default instead of cursor movement,
-        <&zip_xy_to_scroll_mapper>,
-        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,
-        <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
-};
