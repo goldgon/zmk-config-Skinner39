@@ -94,8 +94,8 @@
 
         snipe_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &bootloader                  &trans  &trans  &kp LG(UP)  &trans  &trans
-  &trans  &trans  &kp A  &trans  &trans                       &trans  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &trans
+  &trans  &trans  &kp LG(UP)  &trans  &bootloader                  &trans  &trans  &kp LG(UP)  &trans  &trans
+  &trans  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &trans                       &trans  &kp LG(LEFT)  &kp LG(N2)  &kp LG(RIGHT)  &trans
   &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans                          &trans
             >;
