@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: yangxing
+    - name: yangxing844
       url-base: https://github.com/yangxing844
       name: goldgon
       url-base: https://github.com/goldgon
@@ -23,7 +23,7 @@ manifest:
       remote: badjeff
       revision: main
     - name: zmk-lpm009m360a-driver
-      remote: yangxing
+      remote: yangxing844
       revision: master
   self:
     path: config
