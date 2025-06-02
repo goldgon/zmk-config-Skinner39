@@ -5,23 +5,11 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
-
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 1    // 10
-
-
-
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
     tapping-term-ms = <150>;
 };
-
-
-
-
-
 
 / {
 
