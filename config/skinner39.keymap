@@ -16,9 +16,12 @@
         td3: td3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&kp N3>;
             tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp B>;
+            
         };
+    };
+};
 
 / {
 
