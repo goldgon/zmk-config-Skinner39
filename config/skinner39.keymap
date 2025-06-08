@@ -6,10 +6,20 @@
 #include "keycode_japanese.h"
 
 &mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-    tapping-term-ms = <150>;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+    quick-tap-ms = <150>;
 };
+
+/ { 
+    behaviors {
+        td_e_3: td_e_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_E_3";
+            #binding-cells = <0>;
+            bindings = <kp LEFT_SHIFT>, <&kp NUMBER_3>;
+            tapping-term-ms = <200>;
+        };
 
 / {
 
