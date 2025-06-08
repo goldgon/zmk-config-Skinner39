@@ -16,7 +16,7 @@
         td3: td3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp N3>;
+            bindings = <&kp A>, <&kp N3>;
             tapping-term-ms = <200>;
         };
 
@@ -44,7 +44,7 @@
 
         symbol_layer {
             bindings = <
-  &kp RS(JP_SLASH)  &kp AT_SIGN    &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
+  &kp RS(0x38)  &kp AT_SIGN    &kp HASH   &kp DOLLAR     &kp PERCENT                  &kp CARET       &kp LS(SEMI)  &kp ASTERISK       &kp SLASH          &mkp MB2
   &kp COMMA      &kp JP_SEMI    &kp JP_AT     &kp RS(MINUS)  &kp MINUS                    &kp LS(SLASH)       &kp EQUAL     &kp DOUBLE_QUOTES  &kp LS(0x87)  &kp LS(0x1e)
   &kp PERIOD     &kp JP_COLON  &kp UNDER  &kp UNDER      &trans                       &kp UNDERSCORE  &kp PLUS      &trans             &trans             &kp BACKSLASH
   &trans         &trans                    &trans     &trans         &mo 3        &trans  &trans  &trans                                                              &trans
