@@ -1,8 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-#include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
@@ -18,7 +16,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_E_3";
             #binding-cells = <0>;
-            bindings = <kp LEFT_SHIFT>, <&kp NUMBER_3>;
+            bindings = <&kp LEFT_SHIFT>, <&kp NUMBER_3>;
             tapping-term-ms = <200>;
         };
 
