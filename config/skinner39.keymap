@@ -13,11 +13,10 @@
 
 / { 
     behaviors {
-        td_e_3: td_e_3 {
+        td3: td3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_E_3";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp NUMBER_3>;
+            bindings = <&kp LEFT_SHIFT>, <&kp N3>;
             tapping-term-ms = <200>;
         };
 
