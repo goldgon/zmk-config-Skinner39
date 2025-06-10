@@ -60,6 +60,13 @@
             timeout-ms = <50>;
         };
 
+        scroll {
+            bindings = <&mo 5>;
+            key-positions = <12 13>;
+            timeout-ms = <50>;
+        };
+
+
         };
     };
 
