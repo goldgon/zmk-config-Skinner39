@@ -56,13 +56,13 @@
 
         fopen {
             bindings = <&kp LG(N2)>;
-            key-positions = <9 10>;
+            key-positions = <8 9>;
             timeout-ms = <50>;
         };
 
         scroll {
             bindings = <&mo 5>;
-            key-positions = <12 13>;
+            key-positions = <11 12>;
             timeout-ms = <50>;
         };
 
