@@ -6,7 +6,7 @@
 
 
 &mt {
-    tapping-term-ms = <180>;
+    tapping-term-ms = <170>;
     flavor = "tap-preferred";
     quick-tap-ms = <150>;
     require-prior-idle-ms = <125>;
@@ -45,6 +45,18 @@
         r_ctrl {
             bindings = <&sk RCTRL>;
             key-positions = <18 19>;
+            timeout-ms = <50>;
+        };
+
+        l_ctrl {
+            bindings = <&sk LCTRL>;
+            key-positions = <10 11>;
+            timeout-ms = <50>;
+        };
+
+        fopen {
+            bindings = <&kp LG(N2)>;
+            key-positions = <9 10>;
             timeout-ms = <50>;
         };
 
