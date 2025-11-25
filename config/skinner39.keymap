@@ -92,7 +92,7 @@
         default_layer {
             bindings = <
   &lt 5 ESCAPE        &kp Q         &kp E         &kp U         &kp P                              &kp D  &kp T  &kp R  &kp W  &mkp MB1
-  &kp TAB  &kp O         &lt 5 A         &kp I         &mt LCTRL F                        &mt RCTRL H  &kp Y  &lt 1 K     &kp S      &mt LEFT_SHIFT B
+  &mt LSHIFT TAB      &lt 3 O        &lt 2 A      &lt 1 I         &mt LCTRL F                       &mt RCTRL H  &kp Y  &lt 1 K     &kp S      &mt LEFT_SHIFT B
   &mt LCTRL PERIOD    &mt LGUI X         &mt LALT C         &mt LSHIFT V         &kp L                              &kp N          &kp M  &mt RALT G  &mt RGUI J  &mt RCTRL Z
   &kp LEFT_SHIFT &td3 &kp LEFT_WIN  &mo 6 &mo 4  &mo 5                            &mo 6  &mo 2                       &kp RIGHT_ALT
             >;
