@@ -5,18 +5,16 @@
 #include "keycode_japanese.h"
 
 
-&mt {
-    tapping-term-ms = <165>;
-    flavor = "tap-preferred";
-    quick-tap-ms = <150>;
-    require-prior-idle-ms = <125>;
+&mt { 
+    flavor = "balanced"; 
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>; 
 };
 
 &lt {
-    tapping-term-ms = <165>;
-    flavor = "tap-preferred";
-    quick-tap-ms = <150>;
-    require-prior-idle-ms = <125>;
+    flavor = "balanced";
+    tapping-term-ms = <200>; 
+    quick-tap-ms = <150>; 
 };
 
 
